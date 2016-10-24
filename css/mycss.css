@@ -16,7 +16,7 @@ p {
   color: black;
 }
 
-.sectionTitleBox
+.section1TitleBox
 {
     position: absolute;
     width: 150px;
@@ -26,18 +26,70 @@ p {
     right: 0%;
     top: 0;
     border: 1px solid black;
-    background-color: white;
+    color:red;background-color:#72f2e3
     text-align: center;
 }
 
-.sectionTitle
+.section2TitleBox
+{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    margin-top: 0%;
+    margin-bottom: 40px;
+    right: 0%;
+    top: 0;
+    border: 1px solid black;
+    color:blue;background-color:#dd97dd
+    text-align: center;
+}
+
+.section3TitleBox
+{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    margin-top: 0%;
+    margin-bottom: 40px;
+    right: 0%;
+    top: 0;
+    border: 1px solid black;
+    color:green;background-color:#c4e068
+    text-align: center;
+}
+
+.section1Title
 {
     text-align: center;
 }
 
-.sectionParagraph
+.section2Title
+{
+    text-align: center;
+}
+
+.section3Title
+{
+    text-align: center;
+}
+
+
+.section1Paragraph
 {
     margin-top: 40px;
+    background-color:#cbd6d5
+}
+
+.section2Paragraph
+{
+    margin-top: 40px;
+    background-color:#f8ba8c
+}
+
+.section3Paragraph
+{
+    margin-top: 40px;
+    background-color:#f8a6cf
 }
 
 /* Simple Responsive Framework. */
