@@ -1,114 +1,85 @@
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 30px;
-    text-align: center;
-}
-
-p {
-  width: 90%;
-  height: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: black;
-}
-
-.section1TitleBox
+*
 {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    margin-top: 0%;
-    margin-bottom: 40px;
-    right: 0%;
-    top: 0;
-    border: 1px solid black;
-    color:red;background-color:#72f2e3
-    text-align: center;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
 }
 
-.section2TitleBox
+body
 {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    margin-top: 0%;
-    margin-bottom: 40px;
-    right: 0%;
-    top: 0;
-    border: 1px solid black;
-    color:blue;background-color:#dd97dd
-    text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
-.section3TitleBox
+div
 {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    margin-top: 0%;
-    margin-bottom: 40px;
-    right: 0%;
-    top: 0;
-    border: 1px solid black;
-    color:green;background-color:#c4e068
-    text-align: center;
+	background-color: #FFFFFF;
+	display: inline-block;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border: 0px;
+	width: 99.5%;
+	height: auto;
 }
 
-.section1Title
+#sectionBox  
 {
-    text-align: center;
-    background-color:#cbd6d5
-
+	background-color: #808080;  
+	border: 2px solid black;
+	margin: 10px;
+	width: 94%;
+	height: auto;
 }
 
-.section2Title
+#sectionTitleBox  
 {
-    text-align: center;
-    background-color:#f8ba8c
+	position: relative;
+	font-weight: bold;
+	float: right;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid black;
+	width: 40%;
 }
 
-.section3Title
+h1
 {
-    text-align: center;
-    background-color:#f8a6cf
-
+	text-align: center;
+	font-size: 24px;
 }
 
-
-.section1Paragraph
+div div div
 {
-    margin-top: 40px;
-    background-color:#cbd6d5
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	display: block;
+	height: 20%;
 }
 
-.section2Paragraph
+.Section1
 {
-    margin-top: 40px;
-    background-color:#f8ba8c
+	background-color: #008000;  
+	color: #000000;        
 }
 
-.section3Paragraph
+.Section2
 {
-    margin-top: 40px;
-    background-color:#f8a6cf
+	background-color: #800000;  
+	color: white;        
 }
 
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
+.Section3
+{
+	background-color: #FFFF00;  
+	color: #000000;        
 }
 
 /********** Desktop view / Large devices**********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-        position: relative;
-        float: left;
-        border: 1px solid black;
-        overflow: hidden;
+    float: left;
+    border: 1px #FFFFFF;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -120,11 +91,7 @@ p {
     width: 25%;
   }
   .col-lg-4 {
-    width: 30.33%;
-    margin-right: 1%;  
-    /* total % should be 33.33 since we added the margin of 1px 
-      3px ( for 3 columns) + 30.33 ( width ) = 33.33 
-      sounds great */
+    width: 33.33%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -155,11 +122,8 @@ p {
 /********** Tablet view / Medium devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        position: relative;
-        float: left;
-        border: 1px solid black;
-        overflow: hidden;
-        margin-top: 1%;
+    float: left;
+    border: 1px #FFFFFF;
   }
   .col-md-1 {
     width: 8.33%;
@@ -177,11 +141,7 @@ p {
     width: 41.66%;
   }
   .col-md-6 {
-    width: 48%;
-    margin-right: 1%;  
-    /* total % should be 50% since we added the margin of 1px 
-      2px ( for 2 columns) + 48 ( width ) = 50px 
-      sounds great */
+    width: 50%;
   }
   .col-md-7 {
     width: 58.33%;
@@ -199,21 +159,15 @@ p {
     width: 91.66%;
   }
   .col-md-12 {
-    width: 99%;
-    margin-right: 1%;  
-      /* total = 99% + 1% = 100% */
+    width: 100%;
   }
 }
 
 /********** Mobile view / small devices **********/
 @media (max-width: 767px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        position: relative;
-        float: left;
-        border: 1px solid black;
-        overflow: hidden;
-        margin-right: 1%;
-        margin-top: 1%;
+    float: left;
+    border: 1px #FFFFFF;
   }
   .col-sd-1 {
     width: 8.33%;
